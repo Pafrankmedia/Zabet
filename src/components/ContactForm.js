@@ -320,24 +320,24 @@ export default function ContactForm() {
       </section>
 
       {/* Call to Action Section */}
-      <section className="py-stack-xl px-6 md:px-margin-desktop max-w-container-max mx-auto mb-stack-xl w-full">
-        <ScrollReveal className="bg-primary-container rounded-3xl p-12 relative overflow-hidden text-center md:text-left flex flex-col md:flex-row items-center justify-between gap-stack-lg">
-          <div className="absolute top-0 right-0 w-1/3 h-full bg-secondary/10 -skew-x-12 transform translate-x-1/4"></div>
+      <section className="py-stack-lg md:py-stack-xl px-4 sm:px-6 md:px-margin-desktop max-w-container-max mx-auto mb-stack-xl w-full">
+        <ScrollReveal className="bg-primary-container rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-12 relative overflow-hidden text-center md:text-left flex flex-col md:flex-row items-center justify-between gap-8 md:gap-stack-lg shadow-xl">
+          <div className="absolute top-0 right-0 w-1/3 h-full bg-secondary/10 -skew-x-12 transform translate-x-1/4 pointer-events-none"></div>
 
-          <div className="relative z-10">
-            <h2 className="font-headline-xl text-headline-xl text-white mb-4 font-bold">
+          <div className="relative z-10 max-w-xl">
+            <h2 className="font-headline-xl text-2xl sm:text-3xl md:text-headline-xl text-white mb-3 sm:mb-4 font-bold leading-tight tracking-tight">
               Start your transformation today.
             </h2>
-            <p className="font-body-lg text-body-lg text-on-primary-container max-w-xl opacity-90">
+            <p className="font-body-md sm:font-body-lg text-sm sm:text-base md:text-body-lg text-on-primary-container opacity-90 leading-relaxed">
               Join the league of forward-thinking enterprises reshaping the future through sustainable strategy.
             </p>
           </div>
 
-          <div className="relative z-10 flex flex-col sm:flex-row gap-stack-md w-full md:w-auto">
-            <button className="px-8 py-4 bg-secondary text-white font-headline-md rounded-lg hover:brightness-110 transition-all font-bold active:scale-95 text-center shadow-lg cursor-pointer">
+          <div className="relative z-10 flex flex-col sm:flex-row gap-3 sm:gap-4 w-full md:w-auto">
+            <button className="w-full sm:w-auto px-6 sm:px-8 py-3.5 sm:py-4 bg-secondary text-white font-label-md sm:font-headline-md text-sm sm:text-base font-bold rounded-xl hover:brightness-110 transition-all active:scale-95 text-center shadow-lg cursor-pointer">
               Download Brand Profile
             </button>
-            <button className="px-8 py-4 border border-outline text-white font-headline-md rounded-lg hover:bg-white/5 transition-all font-bold active:scale-95 text-center cursor-pointer">
+            <button className="w-full sm:w-auto px-6 sm:px-8 py-3.5 sm:py-4 border border-outline/50 text-white font-label-md sm:font-headline-md text-sm sm:text-base font-bold rounded-xl hover:bg-white/10 transition-all active:scale-95 text-center cursor-pointer">
               View All Offices
             </button>
           </div>

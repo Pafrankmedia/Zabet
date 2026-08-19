@@ -9,7 +9,7 @@ const LEADERS = [
     id: "david-okoruwa",
     name: "Dr. David Okoruwa",
     role: "Chief Executive Officer & Founder",
-    image: "/assets/leader1.jfif",
+    image: "/assets/leader1.png",
     bio: "Dr. David Okoruwa is the founding visionary behind Zabet Trusthands Koncern Limited. With over two decades of high-level management consulting and sustainability leadership, he has spearheaded complex transformation programs across public and private sectors in Nigeria and globally.",
     highlights: [
       "20+ years executive leadership & strategic advisory",
@@ -21,7 +21,7 @@ const LEADERS = [
     id: "viola-okoruwa",
     name: "Viola Okoruwa",
     role: "Head of Sustainability Strategy",
-    image: "/assets/leader3.jfif",
+    image: "/assets/leader2.png",
     bio: "Viola Okoruwa leads ZTKL's sustainability, ESG intelligence, and climate resilience practices. She specializes in crafting net-zero pathways, green finance frameworks, and ensuring gender-sensitive sustainability programs.",
     highlights: [
       "Expert in carbon accounting, ESG compliance & green finance",
@@ -33,7 +33,7 @@ const LEADERS = [
     id: "okoruwa-jude",
     name: "Okoruwa Jude",
     role: "Director of Global Operations",
-    image: "/assets/leader2.jfif",
+    image: "/assets/leader3.png",
     bio: "Okoruwa Jude oversees operational execution, agile delivery, and regional office coordination across Abuja, Calabar, and Makurdi. His focus is on seamless digital process deployment and rigorous quality standards for all client engagements.",
     highlights: [
       "Directs multi-state regional consulting operations",
