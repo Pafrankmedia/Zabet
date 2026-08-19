@@ -17,6 +17,7 @@ export default function RootLayout({ children }) {
     <html
       lang="en"
       className="h-full scroll-smooth"
+      data-scroll-behavior="smooth"
     >
       <head>
         {/* Google Material Symbols Outlined Icon Pack */}
