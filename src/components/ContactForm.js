@@ -334,12 +334,26 @@ export default function ContactForm() {
           </div>
 
           <div className="relative z-10 flex flex-col sm:flex-row gap-3 sm:gap-4 w-full md:w-auto">
-            <button className="w-full sm:w-auto px-6 sm:px-8 py-3.5 sm:py-4 bg-secondary text-white font-label-md sm:font-headline-md text-sm sm:text-base font-bold rounded-xl hover:brightness-110 transition-all active:scale-95 text-center shadow-lg cursor-pointer">
+            <a 
+              href="/documents/zabet-trusthands-brand-profile.pdf" 
+              download="Zabet_Trusthands_Brand_Profile.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-6 sm:px-8 py-3.5 sm:py-4 bg-secondary text-white font-label-md sm:font-headline-md text-sm sm:text-base font-bold rounded-xl hover:brightness-110 transition-all active:scale-95 text-center shadow-lg cursor-pointer"
+            >
+              <span className="material-symbols-outlined text-lg">download</span>
               Download Brand Profile
-            </button>
-            <button className="w-full sm:w-auto px-6 sm:px-8 py-3.5 sm:py-4 border border-outline/50 text-white font-label-md sm:font-headline-md text-sm sm:text-base font-bold rounded-xl hover:bg-white/10 transition-all active:scale-95 text-center cursor-pointer">
-              View All Offices
-            </button>
+            </a>
+            <a 
+              href="/documents/zabet-consultancy-experience.pdf" 
+              download="Zabet_Consultancy_Experience.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-6 sm:px-8 py-3.5 sm:py-4 border border-outline/50 text-white font-label-md sm:font-headline-md text-sm sm:text-base font-bold rounded-xl hover:bg-white/10 transition-all active:scale-95 text-center cursor-pointer"
+            >
+              <span className="material-symbols-outlined text-lg">description</span>
+              Download Experience Profile
+            </a>
           </div>
         </ScrollReveal>
       </section>

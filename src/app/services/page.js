@@ -10,18 +10,18 @@ export const metadata = {
 export default function Services() {
   return (
     <div className="flex flex-col min-h-screen">
-      
+
       {/* Hero Section */}
       <header className="pt-20 pb-stack-xl px-6 md:px-margin-desktop max-w-container-max mx-auto w-full">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
-          
+
           <div className="md:col-span-7">
             <ScrollReveal>
               <span className="inline-block px-3 py-1 bg-secondary-container text-on-secondary-container font-label-sm text-label-sm rounded mb-4 font-bold">
                 OUR CAPABILITIES
               </span>
               <h1 className="font-display-lg text-display-lg text-primary mb-6 leading-tight">
-                Strategic Excellence. <br/>
+                Strategic Excellence. <br />
                 <span className="text-secondary">Sustainable Future.</span>
               </h1>
               <p className="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
@@ -32,9 +32,9 @@ export default function Services() {
 
           <div className="md:col-span-5 relative mt-8 md:mt-0">
             <ScrollReveal className="relative w-full h-[400px] rounded-xl overflow-hidden shadow-xl float-anim">
-              <Image 
-                className="object-cover" 
-                alt="Zabet strategic sustainability and integrated solutions presentation" 
+              <Image
+                className="object-cover"
+                alt="Zabet strategic sustainability and integrated solutions presentation"
                 src="/assets/service.jpg"
                 fill
                 sizes="(max-width: 768px) 100vw, 40vw"
@@ -54,7 +54,7 @@ export default function Services() {
 
       {/* Services Bento Grid */}
       <section className="py-stack-xl px-6 md:px-margin-desktop max-w-container-max mx-auto w-full">
-        
+
         <div className="mb-stack-lg">
           <ScrollReveal>
             <h2 className="font-headline-xl text-headline-xl text-primary">Core Pillars</h2>
@@ -63,7 +63,7 @@ export default function Services() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
-          
+
           {/* Management Consulting */}
           <ScrollReveal className="md:col-span-8 pillar-card group bg-surface-container-lowest border border-outline-variant rounded-xl p-stack-lg relative overflow-hidden transition-all duration-300 hover:shadow-xl">
             <div className="accent-bar absolute top-0 left-0 h-1 w-12 bg-primary transition-all duration-500"></div>
@@ -90,10 +90,10 @@ export default function Services() {
                 </a>
               </div>
               <div className="md:w-1/2 rounded-lg overflow-hidden h-64 md:h-auto relative min-h-[250px]">
-                <Image 
-                  className="object-cover" 
-                  alt="Corporate boardroom" 
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIjj3AIrUL3vfd-xjBWPEoeH72-jIEv5Imc8-NL2ylbYcJO3l_vAKXlG5FwNxrKQvAruEc_hJVuL3ffMwf7xxONPvcn9Duq9TpsC8bqOG_nHH1mFRG3ksh3PvLYE5z2QOAwGat0VmTDNmdYnKadxxcaNoAm05wxU-dVYynUMDoHHBfxiEQQ8id8kVnBwmg_963cCUwGZuJxForEYGBJXazuq8OaomJrJ_RCWom3NeRhk5BP4hBHIHUT9_pR1aEp1sXqd6KaJfJhx8"
+                <Image
+                  className="object-cover"
+                  alt="Management Consulting Presentation"
+                  src="/assets/services-management.png"
                   fill
                   sizes="(max-width: 768px) 100vw, 30vw"
                 />
@@ -154,7 +154,7 @@ export default function Services() {
                     <p className="text-label-sm text-on-surface-variant">Executives Trained</p>
                   </div>
                   <div className="border border-outline-variant p-3 rounded">
-                    <p className="text-headline-md font-bold text-primary">120+</p>
+                    <p className="text-headline-md font-bold text-primary">20+</p>
                     <p className="text-label-sm text-on-surface-variant">Workshops Yearly</p>
                   </div>
                 </div>
@@ -163,10 +163,10 @@ export default function Services() {
                 </a>
               </div>
               <div className="md:w-1/2 rounded-lg overflow-hidden h-64 md:h-auto relative min-h-[250px]">
-                <Image 
-                  className="object-cover" 
-                  alt="Executives collaborating" 
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwnci9htXekbN7fkZ6sGU9B3SnvoMK6p2fqIRs41WwImc29NxzeLLyO4G3yAjt_zlbUNBwKCDWVfGtgHhj9wZUvU-NYbW6WhTOuZf2O1Dg3pOfw3Lm2-bBuu6h1vctrzBJOk2CyYhbs6WgN27p5PtP0_-ap3rgpSfJYi8KRC4sNFg3oWyant5GL2-2NpPc-7AK4VAHmy-__rmxD3vhejy23GEjZBLu3eAliii4HzDNH16JxmMYletLw005M1al-PRPNduU-i1ggLU"
+                <Image
+                  className="object-cover"
+                  alt="Capacity Development Training Workshop"
+                  src="/assets/services-capacity.png"
                   fill
                   sizes="(max-width: 768px) 100vw, 30vw"
                 />
@@ -185,25 +185,25 @@ export default function Services() {
               The ZTKL Standard of Success
             </h2>
           </ScrollReveal>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-4 gap-gutter">
             <ScrollReveal className="p-6">
               <p className="text-display-lg text-secondary mb-2 font-bold">98%</p>
               <p className="font-label-md text-label-md text-on-primary-container">Strategy Retention Rate</p>
             </ScrollReveal>
-            
+
             <ScrollReveal delay={0.1} className="p-6">
               <p className="text-display-lg text-secondary mb-2 font-bold">$4.2B</p>
               <p className="font-label-md text-label-md text-on-primary-container">Client Value Created</p>
             </ScrollReveal>
-            
+
             <ScrollReveal delay={0.2} className="p-6">
-              <p className="text-display-lg text-secondary mb-2 font-bold">12M</p>
+              <p className="text-display-lg text-secondary mb-2 font-bold">10M</p>
               <p className="font-label-md text-label-md text-on-primary-container">Tons of CO2 Mitigated</p>
             </ScrollReveal>
-            
+
             <ScrollReveal delay={0.3} className="p-6">
-              <p className="text-display-lg text-secondary mb-2 font-bold">32</p>
+              <p className="text-display-lg text-secondary mb-2 font-bold">12</p>
               <p className="font-label-md text-label-md text-on-primary-container">Global Market Presences</p>
             </ScrollReveal>
           </div>
@@ -214,9 +214,9 @@ export default function Services() {
       <section className="py-stack-xl px-6 md:px-margin-desktop max-w-container-max mx-auto w-full">
         <ScrollReveal className="bg-surface-container-low rounded-3xl overflow-hidden flex flex-col lg:flex-row shadow-sm border border-outline-variant/30">
           <div className="lg:w-1/2 h-80 lg:h-auto relative min-h-[300px]">
-            <Image 
-              className="object-cover" 
-              alt="Sprawling solar farm" 
+            <Image
+              className="object-cover"
+              alt="Sprawling solar farm"
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnp6ZgXnQlgIp0pw-iyX01fwnJhF3P6iEXAUUR8JC_SVbu_U1S5PDx2FMsgZNFj3MdkrkX2jj65b62BVW3anSNOEiX1pt37rLQQ10ikJPj7hLUNK5DgISc7yKeO1JNzO_Q7wgbJcFb3wsj6IBsSCS3R_6SAk81C9KdaO6CALuicoRdWZeHCmph3f_5H7udZqxRiSA5PYVi1YLh4zMNktHf24hmyGsSCT7KrXuLiyFa4IPP5B4P5_BLLDK5jHBbLjzLj4MrkhJjqCU"
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"

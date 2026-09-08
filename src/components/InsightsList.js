@@ -18,11 +18,11 @@ export default function InsightsList({ articles }) {
 
   return (
     <div className="flex flex-col min-h-screen">
-      
+
       {/* Featured Headline Section */}
       <section className="relative h-[650px] md:h-[819px] flex items-end overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <Image 
+          <Image
             src="https://lh3.googleusercontent.com/aida-public/AB6AXuDri0JRxguZSliNXCj9BSQAQyKkn400HzE6LTtNyhvscn89cSncb8ymnuvseF1sWMdyLFl_TJt4uI-PegHXnXIJQ_F7a4mb_LAaAGk1NP04VsZr396PWCuqFdzHVT_8rNXcTCoYVDqk8scl8UttmuuHopZyrjEjb3m_JBWvVfq0anxV96HMCUSfS62oRmFhJyE0FkrQbTiqHomEXJ0_hu2zxsp-McSjBdUHAU-Dr54vehi6l2__kFxtrBIbfJGzY0Ut7ctG-Lwf4kg"
             alt="Double exposure cityscape and global map overlay"
             fill
@@ -31,7 +31,7 @@ export default function InsightsList({ articles }) {
           />
           <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/30 to-transparent"></div>
         </div>
-        
+
         <div className="relative z-10 w-full px-6 md:px-margin-desktop max-w-container-max mx-auto pb-stack-xl">
           <div className="max-w-3xl">
             <ScrollReveal className="flex items-center space-x-2 mb-4">
@@ -40,19 +40,19 @@ export default function InsightsList({ articles }) {
               </span>
               <span className="text-white/80 font-label-md">12 min read</span>
             </ScrollReveal>
-            
+
             <ScrollReveal delay={0.1}>
               <h1 className="font-display-lg text-display-lg text-white mb-6 leading-tight font-extrabold">
                 Navigating the Future of Climate Finance in 2025
               </h1>
             </ScrollReveal>
-            
+
             <ScrollReveal delay={0.2}>
               <p className="font-body-lg text-body-lg text-white/90 mb-8 max-w-2xl leading-relaxed">
                 How global institutional investors are pivoting towards regenerative capital and the impact of decentralized climate ledger technologies on emerging markets.
               </p>
             </ScrollReveal>
-            
+
             <ScrollReveal delay={0.3}>
               <button className="bg-white text-primary px-8 py-4 rounded-lg font-label-md hover:bg-secondary-container hover:text-on-secondary-container transition-all flex items-center group active:scale-95 shadow-md cursor-pointer">
                 Read Article
@@ -69,14 +69,13 @@ export default function InsightsList({ articles }) {
       <nav className="sticky top-20 z-40 bg-white/90 backdrop-blur-md border-b border-outline-variant/30">
         <div className="px-6 md:px-margin-desktop max-w-container-max mx-auto flex items-center h-16 space-x-8 overflow-x-auto no-scrollbar">
           {categories.map(category => (
-            <button 
+            <button
               key={category}
               onClick={() => setActiveCategory(category)}
-              className={`font-label-md h-full flex items-center whitespace-nowrap transition-all border-b-2 cursor-pointer ${
-                activeCategory === category 
-                  ? "text-secondary border-secondary font-bold" 
+              className={`font-label-md h-full flex items-center whitespace-nowrap transition-all border-b-2 cursor-pointer ${activeCategory === category
+                  ? "text-secondary border-secondary font-bold"
                   : "text-on-surface-variant border-transparent hover:text-secondary"
-              }`}
+                }`}
             >
               {category === "All" ? "All Insights" : category}
             </button>
@@ -87,19 +86,19 @@ export default function InsightsList({ articles }) {
       {/* Editorial Grid */}
       <section className="py-stack-xl px-6 md:px-margin-desktop max-w-container-max mx-auto w-full">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-gutter">
-          
+
           {/* Main Column */}
           <div className="md:col-span-8 space-y-stack-xl">
             {featured.length > 0 ? (
               featured.map((article, idx) => (
-                <ScrollReveal 
-                  key={article.id} 
+                <ScrollReveal
+                  key={article.id}
                   delay={idx * 0.1}
                   className="bg-white rounded-xl overflow-hidden editorial-shadow accent-border-top group cursor-pointer border border-outline-variant/10"
                 >
                   <div className="md:flex">
                     <div className="md:w-1/2 overflow-hidden h-64 md:h-auto relative min-h-[250px]">
-                      <Image 
+                      <Image
                         src={article.image}
                         alt={article.title}
                         fill
@@ -119,7 +118,7 @@ export default function InsightsList({ articles }) {
                       </p>
                       <div className="mt-auto flex items-center text-label-sm text-outline">
                         <span>{article.date}</span>
-                        <span className="mx-2">•</span>
+                        <span className="mx-2">.</span>
                         <span>By {article.author}</span>
                       </div>
                     </div>
@@ -133,7 +132,7 @@ export default function InsightsList({ articles }) {
 
           {/* Sidebar */}
           <aside className="md:col-span-4 space-y-stack-lg">
-            
+
             {/* Newsletter */}
             <ScrollReveal className="bg-primary-container rounded-xl p-stack-lg text-white relative overflow-hidden">
               <div className="relative z-10">
@@ -142,9 +141,9 @@ export default function InsightsList({ articles }) {
                   Strategic insights delivered bi-weekly to your inbox. No fluff, just high-stakes analysis.
                 </p>
                 <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
-                  <input 
-                    className="w-full bg-white/10 border border-white/20 rounded-lg py-3 px-4 text-white placeholder:text-white/40 focus:ring-2 focus:ring-secondary focus:border-transparent transition-all outline-none" 
-                    placeholder="Work email" 
+                  <input
+                    className="w-full bg-white/10 border border-white/20 rounded-lg py-3 px-4 text-white placeholder:text-white/40 focus:ring-2 focus:ring-secondary focus:border-transparent transition-all outline-none"
+                    placeholder="Work email"
                     type="email"
                   />
                   <button className="w-full bg-secondary text-white font-label-md py-3 rounded-lg hover:bg-secondary/90 transition-all font-bold cursor-pointer">
@@ -231,13 +230,13 @@ export default function InsightsList({ articles }) {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-gutter">
             {archives.length > 0 ? (
               archives.map((article, idx) => (
-                <ScrollReveal 
+                <ScrollReveal
                   key={article.id}
                   delay={idx * 0.1}
                   className="space-y-stack-lg"
                 >
                   <div className="aspect-video w-full rounded-lg overflow-hidden mb-4 border border-outline-variant/20 relative min-h-[200px]">
-                    <Image 
+                    <Image
                       src={article.image}
                       alt={article.title}
                       fill
@@ -270,14 +269,14 @@ export default function InsightsList({ articles }) {
               Connect with our global consultants to tailor these strategic insights to your organization’s unique challenges.
             </p>
             <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
-              <a 
-                href="/contact" 
+              <a
+                href="/contact"
                 className="bg-primary text-white px-10 py-4 rounded-lg font-label-md hover:shadow-xl transition-all w-full sm:w-auto text-center font-bold"
               >
                 Schedule a Briefing
               </a>
-              <a 
-                href="/services" 
+              <a
+                href="/services"
                 className="border border-outline text-primary px-10 py-4 rounded-lg font-label-md hover:bg-surface-container-high transition-all w-full sm:w-auto text-center font-bold"
               >
                 View All Services

@@ -151,6 +151,15 @@ export default function About() {
                     Behind Radio Benue Makurdi Benue State</p>
                 </div>
               </div>
+              <div className="flex items-center gap-stack-md p-stack-md rounded-lg hover:bg-surface-container-highest transition-colors cursor-pointer group">
+                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary flex-shrink-0">
+                  <span className="material-symbols-outlined">location_on</span>
+                </div>
+                <div>
+                  <h6 className="font-label-md text-label-md font-bold text-primary">LAGOS OFFICE</h6>
+                  <p className="font-label-sm text-label-sm text-on-surface-variant">12, Jibowu Street, Yaba, Lagos</p>
+                </div>
+              </div>
             </ScrollReveal>
           </div>
 
